@@ -31,7 +31,13 @@ type Config struct {
 
 func init() {
 	cfg = loadConfig("config.json")
-	fmt.Println("Valak Stealer")
+	fmt.Println("                       Valak Stealer                   ")
+	fmt.Println("")
+	fmt.Println("")
+	fmt.Println("")
+	fmt.Println("")
+	fmt.Println("")
+	fmt.Println("")
 }
 
 func main() {
